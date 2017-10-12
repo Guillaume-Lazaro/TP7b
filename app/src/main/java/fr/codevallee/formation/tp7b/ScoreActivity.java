@@ -20,9 +20,11 @@ public class ScoreActivity extends AppCompatActivity {
         Intent intent = getIntent();
         final int score = intent.getIntExtra("score",0);
 
+        //On récupére et on personnalise l'interface:
         TextView scoreView = (TextView) findViewById(R.id.text_score);
         scoreView.setText("Votre score est de "+score+"/"+getResources().getStringArray(R.array.questions).length);
 
+        //On récupére le bouton et on lui assigne l'action de renvoyer au menu principal:
         final Button boutonTerminer = (Button) findViewById(R.id.button_terminer);
         boutonTerminer.setOnClickListener(new View.OnClickListener() {
             @Override

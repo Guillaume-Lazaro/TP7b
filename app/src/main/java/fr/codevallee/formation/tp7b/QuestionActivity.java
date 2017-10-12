@@ -16,7 +16,8 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_layout);
 
-        //On récupére le numéro de la question en cours
+        //Activity qui sert à poser la question en cours (elle commence par 0), à afficher les réponses et à passer à l'écran réponse
+        //On récupére le numéro de la question en cours et le score actuelle
         Intent intent = getIntent();
         final int questionActuelle = intent.getIntExtra("question_actuelle",0);
         final int score = intent.getIntExtra("score",0);
@@ -37,11 +38,12 @@ public class QuestionActivity extends AppCompatActivity {
         final TextView questionView = (TextView) findViewById(R.id.text_question);
         final Button bouton1 = (Button) findViewById(R.id.button_1);
         final Button bouton2 = (Button) findViewById(R.id.button_2);
-
         questionView.setText(intitule);
         bouton1.setText(reponseA);
         bouton2.setText(reponseB);
 
+        //Ici, on assigne l'action correspondante à chaque boutons, pour chacun, on vérifie si ça correspond à la bonne réponse,
+        // et si c'est le cas, on fait passer "bonne réponse", sinon "mauvaise réponse"
         bouton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

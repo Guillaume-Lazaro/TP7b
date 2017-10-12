@@ -14,12 +14,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Activity du menu principale: Un seul bouton, le bouton commencer
+        //On récupére le bouton commencer
         final Button boutonCommencer = (Button) findViewById(R.id.button_commencer);
 
+        //Et on lui assigne la fonction de lancer l'activity question
         boutonCommencer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("BOUTON","Bouton Commencer");
                 Intent intent = new Intent(MainActivity.this, QuestionActivity.class);
                 startActivity(intent);
             }

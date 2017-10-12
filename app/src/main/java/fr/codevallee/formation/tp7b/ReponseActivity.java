@@ -16,16 +16,18 @@ public class ReponseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reponse_layout);
 
+        //Cette activité, sert juste à afficher le texte renvoyé par l'activité question, donc "bonne/mauvaise réponse"
         //On récupére les données utiles:
         Intent intent = getIntent();
         String texte = intent.getStringExtra("message");
         final int questionActuelle = intent.getIntExtra("question_actuelle", 0);
         final int score = intent.getIntExtra("score",0);
 
+        //On récupére les éléments de l'interface
         final Button boutonContinuer = (Button) findViewById(R.id.button_continuer);
-
-        //On affiche si réponse était bonne ou mauvaise:
         TextView textReponse = (TextView) findViewById(R.id.text_reponse);
+
+        //On affiche si la réponse était bonne ou mauvaise:
         textReponse.setText(texte);
 
         //Si il reste des question on continue:
@@ -34,8 +36,8 @@ public class ReponseActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(ReponseActivity.this, QuestionActivity.class);
-                    intent.putExtra("question_actuelle", questionActuelle + 1);
-                    intent.putExtra("score", score);
+                    intent.putExtra("question_actuelle", questionActuelle + 1); //On renvoie le numéro de la question
+                    intent.putExtra("score", score);                            //et le score
                     startActivity(intent);
                 }
             });
@@ -45,7 +47,7 @@ public class ReponseActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(ReponseActivity.this, ScoreActivity.class);
-                    intent.putExtra("score", score);
+                    intent.putExtra("score", score);    //On renvoie le score
                     startActivity(intent);
                 }
             });

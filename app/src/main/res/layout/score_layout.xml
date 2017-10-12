@@ -21,11 +21,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Votre score est de 10/10"/>
+            android:text="@string/affichage_score"/>
 
         <Button
             android:id="@+id/button_terminer"
-            android:text="Menu Principal"
+            android:text="@string/menu_principal"
             android:textSize="30dp"
             android:layout_width="300dp"
             android:layout_height="100dp"/>

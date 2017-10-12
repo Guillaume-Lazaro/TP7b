@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">TP7b</string>
 
+    <string name="reponse_correcte">Bravo! C\'était la bonne réponse!</string>
+    <string name="reponse_fausse">Faux! C\'était la mauvaise réponse!</string>
+
+    <string name="titre">Le QCM de la vie</string>
+    <string name="commencer">Commencer</string>
+    <string name="terminer">Terminer</string>
+    <string name="continuer">Continuer</string>
+    <string name="menu_principal">Menu principal</string>
+
+    <string name="affichage_score">Votre score est de</string>
+
     <string-array name="questions">
 
         <item>ça va? _ oui _ non _1</item>
@@ -9,7 +20,7 @@
 
         <item>Android utilise _ Java _ Objective-C _1</item>
 
-        <item>L OS mobile le plus répandu est _ Windows Phone _ Android _2</item>
+        <item>L\'OS mobile le plus répandu est _ Windows Phone _ Android _2</item>
 
         <item>Le président américain actuel est _ Donald Trump _ Al Capone _1</item>
 
@@ -19,7 +30,7 @@
 
         <item>Le président russe actuel est _ Vladimir Poutine _ Un ours _1</item>
 
-        <item>L homme a marché sur la Lune en _ 1972 _ 1969 _2</item>
+        <item>L\'homme a marché sur la Lune en _ 1972 _ 1969 _2</item>
 
         <item>Inception a été réalisé par _ Christopher Nolan _ Jean-Pierre Jeunet _1</item>
 

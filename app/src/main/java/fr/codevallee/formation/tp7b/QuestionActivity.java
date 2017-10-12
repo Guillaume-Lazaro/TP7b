@@ -50,10 +50,10 @@ public class QuestionActivity extends AppCompatActivity {
                 Intent intent = new Intent(QuestionActivity.this, ReponseActivity.class);
                 String nextMessage="";
                 if(bonneReponse==1) {
-                    nextMessage += "Bravo! C'était la bonne réponse!";
+                    nextMessage = getString(R.string.reponse_correcte);
                     intent.putExtra("score", score+1);
                 } else {
-                    nextMessage += "Faux! C'était la mauvaise réponse!";
+                    nextMessage = getString(R.string.reponse_fausse);
                     intent.putExtra("score", score);
                 }
 
@@ -69,10 +69,10 @@ public class QuestionActivity extends AppCompatActivity {
                 Intent intent = new Intent(QuestionActivity.this, ReponseActivity.class);
                 String nextMessage="";
                 if(bonneReponse==2) {
-                    nextMessage += "Bravo! C'était la bonne réponse!";
+                    nextMessage = getString(R.string.reponse_correcte);
                     intent.putExtra("score", score+1);
                 } else {
-                    nextMessage += "Faux! C'était la mauvaise réponse!";
+                    nextMessage = getString(R.string.reponse_fausse);
                     intent.putExtra("score", score);
                 }
 

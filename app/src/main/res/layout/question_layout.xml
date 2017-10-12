@@ -21,11 +21,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Le président américain actuel est"/>
+            android:text="Question test assez longue destiné à disparaitre"/>
 
         <Button
             android:id="@+id/button_1"
-            android:text="Al Capone"
+            android:text="Réponse courte"
             android:textSize="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
 
         <Button
             android:id="@+id/button_2"
-            android:text="Un techniciens de surface"
+            android:text="Réponse un peu plus longue pour tester"
             android:textSize="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

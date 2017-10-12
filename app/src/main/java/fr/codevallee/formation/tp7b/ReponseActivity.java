@@ -42,7 +42,7 @@ public class ReponseActivity extends AppCompatActivity {
                 }
             });
         } else { //Sinon on s'arréte là:
-            boutonContinuer.setText("Terminé");
+            boutonContinuer.setText(getString(R.string.terminer));
             boutonContinuer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

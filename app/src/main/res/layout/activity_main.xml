@@ -13,12 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Le QCM de la vie"
+        android:text="@string/titre"
         android:textSize="60dp"/>
 
     <Button
         android:id="@+id/button_commencer"
-        android:text="Commencer"
+        android:text="@string/commencer"
         android:textSize="40dp"
         android:layout_width="300dp"
         android:layout_height="100dp"/>

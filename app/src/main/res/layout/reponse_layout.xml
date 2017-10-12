@@ -21,11 +21,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="La réponse était juste/fausse"/>
+            android:text="@string/reponse_correcte"/>
 
         <Button
             android:id="@+id/button_continuer"
-            android:text="Continuer"
+            android:text="@string/continuer"
             android:textSize="30dp"
             android:layout_width="300dp"
             android:layout_height="100dp"/>

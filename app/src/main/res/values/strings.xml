@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TP7b</string>
+
+    <string-array name="questions">
+
+        <item>ça va? _ oui _ non _1</item>
+
+        <item>La terre est _ Plate _ Ronde _2</item>
+
+        <item>Android utilise _ Java _ Objective-C _1</item>
+
+        <item>L OS mobile le plus répandu est _ Windows Phone _ Android _2</item>
+
+        <item>Le président américain actuel est _ Donald Trump _ Al Capone _1</item>
+
+        <item>Qui utilise un sabre laser? _ Les jedis _ les technicien de surface _1</item>
+
+        <item>A Toulouse, on dit _ Croissantine _ Croissant _2</item>
+
+        <item>Le président russe actuel est _ Vladimir Poutine _ Un ours _1</item>
+
+        <item>L homme a marché sur la Lune en _ 1972 _ 1969 _2</item>
+
+        <item>Inception a été réalisé par _ Christopher Nolan _ Jean-Pierre Jeunet _1</item>
+
+    </string-array>
+
+</resources>
